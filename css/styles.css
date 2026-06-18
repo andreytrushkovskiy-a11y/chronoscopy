@@ -302,9 +302,13 @@ section p em{ color:var(--anomaly-bright); font-style:italic; }
   display:flex; align-items:center; gap:clamp(1.5rem,4vw,4rem); flex-wrap:wrap; }
 .package__inner .sec-index{ margin:0; }
 .package__list{ display:flex; gap:0.7rem; flex-wrap:wrap; }
-.pill{ font-size:0.66rem; color:var(--ink-dim); border:1px solid var(--line);
-  padding:0.7em 1.2em; border-radius:2em; transition:.35s var(--ease); cursor:default; }
-.pill:hover{ color:var(--bg-0); background:var(--chrono-bright); border-color:var(--chrono-bright); }
+.pill{ font-family:var(--font-mono); font-size:0.66rem; letter-spacing:0.12em;
+  text-transform:uppercase; color:var(--ink-dim); border:1px solid var(--line);
+  padding:0.7em 1.2em; border-radius:2em; transition:.35s var(--ease);
+  background:transparent; appearance:none; -webkit-appearance:none;
+  display:inline-block; line-height:1; }
+.pill:hover{ color:var(--bg-0); background:var(--chrono-bright); border-color:var(--chrono-bright);
+  transform:translateY(-2px); }
 
 /* ───────── CONTACT ───────── */
 .contact{ position:relative; overflow:hidden; padding:clamp(6rem,16vh,13rem) var(--pad) 0; }
