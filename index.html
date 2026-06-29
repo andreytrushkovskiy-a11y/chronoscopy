@@ -18,6 +18,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon.png" />
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 </head>
 <body>
 
@@ -40,7 +44,9 @@
 
 <!-- ───────────────── FIXED HUD ───────────────── -->
 <header class="hud">
-  <a class="hud__brand mono" href="#hero" data-cursor>CHRONOSCOPY</a>
+  <a class="hud__brand" href="#hero" data-cursor aria-label="Chronoscopy — home">
+    <img src="assets/img/chronoscopy-wordmark-white.png" alt="Chronoscopy" class="hud__logo" width="2500" height="130" />
+  </a>
   <nav class="hud__nav mono">
     <a href="#logline" data-cursor>I · Premise</a>
     <a href="#world" data-cursor>II · World</a>
