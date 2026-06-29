@@ -67,7 +67,7 @@ a{ color:inherit; text-decoration:none; }
 @media (hover:hover) and (pointer:fine){ *{ cursor:none !important; } }
 .cursor{
   position:fixed; top:0; left:0; width:42px; height:42px; z-index:9999;
-  background:url("../assets/img/orb-cursor.png") center/contain no-repeat;
+  background:url("../assets/img/orb-cursor.webp") center/contain no-repeat;
   pointer-events:none; transform:translate(-50%,-50%); opacity:0;
   filter:drop-shadow(0 0 10px oklch(0.72 0.16 300 / 0.55));
   transition:width .3s var(--ease), height .3s var(--ease), filter .3s var(--ease), opacity .3s;

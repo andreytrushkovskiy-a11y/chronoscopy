@@ -70,11 +70,11 @@
     gsap.set('.reveal-up', { opacity: 1, y: 0 });
   } else {
     const tick = setInterval(() => {
-      p += Math.random() * 16 + 6;
-      if (p >= 100) { p = 100; clearInterval(tick); setTimeout(revealSite, 320); }
+      p += Math.random() * 22 + 12;
+      if (p >= 100) { p = 100; clearInterval(tick); setTimeout(revealSite, 150); }
       if (fill) fill.style.width = p + '%';
       if (pct) pct.textContent = String(Math.floor(p)).padStart(2, '0');
-    }, 130);
+    }, 60);
   }
 
   /* ---------- generic reveal-up on scroll ---------- */
